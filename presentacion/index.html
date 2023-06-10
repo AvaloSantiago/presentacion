@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="views/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand">Navbar</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mirá acá
+            </a>
+            <ul class="dropdown-menu" style="padding-right: 100px;">
+                    <li class="instagramlogo">
+                    <a href="https://www.instagram.com/_ssssnt/" target="_blank">
+                    <img style="width: 20px; height: 20px;"src="/views/public/instagramlogo.jfif" alt="Mi Instagram">
+                    Mí Instagram
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        </div>
+    </nav>
+    <button style="width: 150px; height: 60px; grid-column: 2/3;" class="btn btn-success" class="bton" onclick="mostrarTarjeta()">apretá aca</button>
+    
+    <div class="container">
+        <div class="card" id="tarjeta" style="display: none;">
+            <div class="card-body">
+                <h1>Soy Santiago Matias Avalo</h1>
+                <h5>Soy de la republica Argentina, de la mejor ciudad de todas, Córdoba.</h5>
+                <h5>Tengo 15 añitos nomás, y mi pasión es aprender la arte de la programación.</h5>
+                <div class="imgfm">
+                    <img src="/views/public/felizmiercoles.jpg" alt="feliz miercoles" style="width: auto; height: 100px;">
+                    <button style="display: grid;grid-template-columns: max-content;" class="btn btn-success" onclick="mostrarTarjetaNueva()">¿Qué sé hacer?</button>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="tarjeta2" style="display: none;">
+            <h1>Además de altas milanesas controlo varias tecnologías.</h1>
+            <img style = "width: 150px; height: 150px;" src="/views/public/javascriptlogo.png" alt="javascriptlogo">
+            <img style= "width: 100px; height: 65px;" src="/views/public/nodejsexpresslogo.png" alt="nodejsexpresslogo">
+            <img style= "padding-left:50px ;width: 140px; height: 85px;" src = "/views/public/htmllogo.png" alt="htmllogo">
+            <img style= "padding-left:50px ;width: 120px; height: 85px;" src = "/views/public/csslogo.png" alt="csslogo">
+        <h6>(Me especializo en el back, onda javascript pero me se defender en el front aunque sea.)</h6>
+        <button class="btn btn-info" onclick=mostrarTarjeta3()>Más sobre mí</button>
+        </div>
+        <div class="card" id="tarjeta3" style= "display:none;">
+            <h1>Tengo dos mascotas, una es mi gata que se llama nena</h1>
+            <img src="views/public/nena.png" alt = "nena">
+            </div>
+    </div>
+</body>
+</html>

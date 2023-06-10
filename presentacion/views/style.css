@@ -1,0 +1,19 @@
+
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+}
+.bton{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+body{
+    background-color: rgb(240, 213, 168) ;
+}
+.instagramlogo{
+    text-decoration: underline;
+    color: black; 
+    }
